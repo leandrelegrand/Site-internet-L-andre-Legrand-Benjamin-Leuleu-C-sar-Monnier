@@ -1,0 +1,151 @@
+/* Variables */
+:root {
+    --primary-color: #0C4DA2;
+    --secondary-color: #FFD700;
+    --font-size: 20px;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Titles */
+h1, h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Menu */
+menu {
+    background-color: var(--primary-color);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+menu li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+menu a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--font-size);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s;
+}
+
+menu li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Profile Menu Button */
+header > button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header > button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Content */
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: var(--font-family);
+}
+
+/* Images */
+.toyota-i-road {
+    width: 100%;
+    height: auto;
+}
+
+/* Text */
+p {
+    font-size: var(--font-size);
+    text-align: justify;
+    margin: 20px 0;
+    font-family: var(--font-family);
+}
+
+/* Buttons */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: var(--font-family);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    menu ul {
+        flex-direction: column;
+    }
+
+    menu ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}

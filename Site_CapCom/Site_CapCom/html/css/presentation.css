@@ -1,0 +1,252 @@
+/* Définition */
+:root {
+    --primary-color: #0C4DA2;
+    --secondary-color: #FFD700;
+    --font-size: 20px;
+    --font-family: 'Arial', sans-serif;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Menu */
+menu {
+    background-color: var(--primary-color);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+menu li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+menu a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--font-size);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: color 0.3s;
+}
+
+menu li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Bouton menu Profil */
+header > .profil-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header > .profil-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Contenu */
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Section */
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+section > img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Formulaire */
+.formulaire {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.formulaire label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulaire input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton */
+button, .button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Liste des développeurs */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Contact */
+ul.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul.contact li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+ul.contact li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+/* Texte, police, etc. */
+p {
+    font-size: var(--font-size);
+    text-align: justify;
+    margin: 20px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+    menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    menu ul {
+        flex-direction: column;
+    }
+
+    menu ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+

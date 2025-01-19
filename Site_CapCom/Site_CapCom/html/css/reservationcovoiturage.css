@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #0C4DA2; 
+    --secondary-color: #FFD700; 
+    --font-size: 20px;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0C4DA2;
+    color: white;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #0C4DA2;
+}
+
+header h1 {
+    color: #FFD700;
+    font-size: 36px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Aligns nav width with the form width */
+    margin: 0 auto; /* Centers the nav */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.formulaire {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Increased width of the form */
+    margin: 20px auto;
+}
+
+.formulaire h1 {
+    text-align: center;
+    color: #FFD700;
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: #0C4DA2;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #0C4DA2;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="number"], input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"] {
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    background-color: #fff;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0C4DA2;
+    box-shadow: 0 0 8px #0C4DA2;
+}
+
+button {
+    background-color: #0C4DA2;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+button:hover {
+    background-color: #FFD700;
+    transform: scale(1.05);
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="date"]:hover, input[type="time"]:hover, textarea:hover {
+    border-color: #1F7BBF;
+}
+
+@media (max-width: 768px) {
+    .formulaire {
+        padding: 20px;
+        margin: 10px;
+        max-width: 100%; /* Makes the form width adjust to screen size */
+    }
+
+    .formulaire h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+}
